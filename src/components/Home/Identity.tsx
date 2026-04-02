@@ -1,3 +1,4 @@
+// --- Animation & Icons ---
 import { motion } from 'motion/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGamepad } from '@fortawesome/free-solid-svg-icons';
@@ -17,14 +18,14 @@ export default function Identity() {
           </h2>
           <div className="space-y-6 text-xl md:text-2xl text-on-surface-variant font-medium leading-relaxed">
             <p>
-              We are an independent software and game development studio out of{' '}
-              <span className="text-on-surface font-bold">Buffalo, NY.</span> We don't limit
-              ourselves to one genre or style.
+              We&apos;re an independent app and game studio proud to call{' '}
+              <span className="text-on-surface font-bold">Buffalo, NY</span> home. We don&apos;t
+              like to box ourselves into just one genre or style.
             </p>
             <p>
-              Our goal is simple: build high-impact digital experiences inspired by the undeniable
-              energy of the 716. From industrial grit to playful dopamine loops, we are currently
-              engineering our first title.
+              Our mission is pretty simple: to build genuinely fun, memorable digital experiences
+              inspired by the undeniable energy of the 716. From industrial grit to pure arcade joy,
+              we are currently heads-down building our very first title.
             </p>
           </div>
         </motion.div>
@@ -35,7 +36,7 @@ export default function Identity() {
           viewport={{ once: true }}
           className="md:col-span-4 flex justify-center">
           <div className="glass-card p-12 rounded-xl border-4 border-white/5 transform transition-transform hover:rotate-0">
-            <FontAwesomeIcon icon={faGamepad} className="text-primary w-24 h-24" />
+            <FontAwesomeIcon icon={faGamepad} className="text-primary" size="6x" />
           </div>
         </motion.div>
       </div>
