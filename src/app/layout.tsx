@@ -26,9 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-surface text-on-surface font-body overflow-x-hidden selection:bg-primary selection:text-on-primary">
-        <Header />
-        {children}
-        <Footer />
+        <div className="min-h-screen">
+          <Header />
+          {children}
+          <Footer />
+        </div>
         <AnalyticsInitializer />
       </body>
     </html>
