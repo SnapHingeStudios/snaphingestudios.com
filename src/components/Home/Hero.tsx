@@ -2,11 +2,12 @@
 
 // --- React ---
 import { useEffect, useState } from 'react';
-
+// --- Next ---
+import Image from 'next/image';
 // --- Animation & Icons ---
 import { motion } from 'motion/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCube, faChevronDown, faSnowflake } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faSnowflake } from '@fortawesome/free-solid-svg-icons';
 
 // --- Types ---
 interface Particle {
@@ -69,9 +70,13 @@ export default function Hero() {
           transition={{ type: 'spring', stiffness: 260, damping: 20 }}
           className="mb-8 flex justify-center">
           <div className="w-48 h-48 md:w-64 md:h-64 bg-primary rounded-[3rem] flex items-center justify-center shadow-[0_20px_0_0_#287A41] hover:rotate-0 transition-transform duration-500 cursor-pointer group">
-            <FontAwesomeIcon
-              icon={faCube}
-              className="text-on-primary w-32 h-32 md:w-40 md:h-40 group-hover:scale-110 transition-transform"
+            <Image
+              src="/icons/shs-logo.svg"
+              alt="Snap Hinge Studios Logo"
+              width={224}
+              height={224}
+              className="w-40 h-40 md:w-56 md:h-56 group-hover:scale-110 transition-transform"
+              priority
             />
           </div>
         </motion.div>
