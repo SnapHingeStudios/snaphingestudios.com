@@ -1,3 +1,5 @@
+// --- Next ---
+import Image from 'next/image';
 // --- Animation & Icons ---
 import { motion } from 'motion/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,8 +17,10 @@ export default function Mascot() {
             className="order-2 lg:order-1">
             <div className="relative group">
               <div className="absolute -inset-4 bg-primary/20 rounded-xl blur-3xl group-hover:bg-primary/30 transition-all" />
-              <img
+              <Image
                 alt="Mac the Mascot"
+                width={600}
+                height={500}
                 className="relative rounded-xl shadow-2xl w-full h-[500px] object-cover border-8 border-surface-container-highest"
                 src="/mascot/mascot-player-one.webp"
               />
@@ -40,9 +44,9 @@ export default function Mascot() {
               The Spirit of the <span className="italic">Herd.</span>
             </h2>
             <p className="text-xl text-on-surface-variant font-medium leading-relaxed mb-12">
-              Meet Mac. He's more than just a logo to us—he's the heavy-hitting heart of the studio.
-              Tough, resilient, and always ready to put the work in, Mac represents the blue-collar
-              grit and unapologetic creativity we pour into every game and app we build.
+              Meet Mac. He&apos;s more than just a logo to us—he&apos;s the heavy-hitting heart of
+              the studio. Tough, resilient, and always ready to put the work in, Mac represents the
+              blue-collar grit and unapologetic creativity we pour into every game and app we build.
             </p>
 
             <div className="flex flex-wrap gap-4">

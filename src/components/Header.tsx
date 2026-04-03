@@ -1,5 +1,6 @@
 // --- Next ---
 import Image from 'next/image';
+import Link from 'next/link';
 // --- Icons ---
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -13,7 +14,7 @@ import {
 export default function Header() {
   return (
     <nav className="absolute top-0 w-full z-50 bg-surface/60 backdrop-blur-xl border-b border-white/5 shadow-[0_4px_0_0_rgba(0,0,0,0.3)] flex justify-between items-center px-8 py-6">
-      <a
+      <Link
         href="/"
         className="flex items-center gap-3 group transition-transform active:scale-95"
         aria-label="Snap Hinge Studios Home">
@@ -30,7 +31,7 @@ export default function Header() {
         <span className="text-2xl font-headline font-black italic text-primary tracking-tighter">
           Snap Hinge Studios
         </span>
-      </a>
+      </Link>
 
       <div className="flex items-center gap-6">
         <div className="hidden md:flex gap-4 items-center mr-4">

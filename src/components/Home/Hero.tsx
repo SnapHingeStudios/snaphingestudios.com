@@ -32,6 +32,7 @@ export default function Hero() {
       opacity: Math.random() * 0.4 + 0.2,
     }));
 
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setParticles(generatedParticles);
   }, []);
 
