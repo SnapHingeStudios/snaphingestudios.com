@@ -1,3 +1,4 @@
+// --- Animation & Icons ---
 import { motion } from 'motion/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
@@ -15,14 +16,13 @@ export default function Mascot() {
             <div className="relative group">
               <div className="absolute -inset-4 bg-primary/20 rounded-xl blur-3xl group-hover:bg-primary/30 transition-all" />
               <img
-                alt="Hank the Mascot"
+                alt="Mac the Mascot"
                 className="relative rounded-xl shadow-2xl w-full h-[500px] object-cover border-8 border-surface-container-highest"
-                src="https://images.unsplash.com/photo-1591154665854-01fe17769bcd?auto=format&fit=crop&q=80&w=1000"
-                referrerPolicy="no-referrer"
+                src="/mascot/mascot-player-one.webp"
               />
               <div className="absolute -bottom-8 -right-8 glass-card px-8 py-4 rounded-xl border-2 border-primary/30">
-                <span className="text-primary font-headline font-black text-3xl tracking-widest">
-                  HANK
+                <span className="text-primary font-headline font-black text-3xl tracking-widest uppercase">
+                  Mac
                 </span>
               </div>
             </div>
@@ -40,9 +40,9 @@ export default function Mascot() {
               The Spirit of the <span className="italic">Herd.</span>
             </h2>
             <p className="text-xl text-on-surface-variant font-medium leading-relaxed mb-12">
-              Meet Hank. He's more than a logo; he's our North Star. Tough, resilient, and ready to
-              charge. Hank embodies the premium artistry and technical precision we bring to every
-              project.
+              Meet Mac. He's more than just a logo to us—he's the heavy-hitting heart of the studio.
+              Tough, resilient, and always ready to put the work in, Mac represents the blue-collar
+              grit and unapologetic creativity we pour into every game and app we build.
             </p>
 
             <div className="flex flex-wrap gap-4">
