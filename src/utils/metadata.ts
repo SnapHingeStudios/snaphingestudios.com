@@ -14,12 +14,20 @@ interface PageMetadata {
 // --- Base Metadata ---
 const BASE_URL = 'https://snaphingestudios.com';
 const SITE_NAME = 'Snap Hinge Studios';
-const TWITTER_CREATOR = '@SnapHingeStudios';
+const TWITTER_CREATOR = '@SnapHingeStudio';
 const GOOGLE_ADSENSE_ACCOUNT = '';
 const DEFAULT_TITLE = 'Snap Hinge Studios';
-const DEFAULT_DESCRIPTION = 'Independent software and game development studio based in Buffalo, NY. Arcade Grit. 716 Roots.';
-const DEFAULT_OG_IMAGE = ``;
-const DEFAULT_KEYWORDS = ['Snap Hinge Studios', 'Software Development', 'Game Development', 'Buffalo, NY', '716 Roots', 'Arcade Grit'];
+const DEFAULT_DESCRIPTION = "We're an independent app and game studio proud to call Buffalo, NY home. We build unapologetic digital experiences fueled by blue-collar grit and classic arcade energy. Welcome to the Herd.";
+const DEFAULT_OG_IMAGE = '/mascot/mascot-player-one.webp';
+const DEFAULT_KEYWORDS = [
+  'Snap Hinge Studios',
+  'Buffalo NY game studio',
+  'Indie game developers',
+  'App development Buffalo',
+  'Arcade Grit',
+  '716 Roots',
+  'One Buffalo Labs'
+];
 
 /**
  * Generates metadata for a page, merging with site-wide defaults.
@@ -39,6 +47,7 @@ export function generateMetadata({
   const allKeywords = [...new Set([...DEFAULT_KEYWORDS, ...keywords])];
   const ogImageUrl = imageUrl ? `${BASE_URL}${imageUrl}` : DEFAULT_OG_IMAGE;
   const otherMetadata: Metadata['other'] = {};
+
   if (GOOGLE_ADSENSE_ACCOUNT) {
     otherMetadata['google-adsense-account'] = GOOGLE_ADSENSE_ACCOUNT;
   }
@@ -83,7 +92,7 @@ export function generateMetadata({
           url: ogImageUrl,
           width: 1200,
           height: 630,
-          alt: `${title || 'REPLACE'} - ME`,
+          alt: pageTitle,
           type: 'image/png',
         },
       ],
@@ -91,9 +100,9 @@ export function generateMetadata({
       type: 'website',
     },
     ...(Object.keys(otherMetadata).length > 0 && { other: otherMetadata }),
-  };  
+  };
 
-if (TWITTER_CREATOR) {
+  if (TWITTER_CREATOR) {
     metadata.twitter = {
       card: 'summary_large_image',
       title: pageTitle,
