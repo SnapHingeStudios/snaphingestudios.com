@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import { generateMetadata } from '@/utils/metadata';
 import Link from 'next/link';
+// --- Icons ---
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Privacy Policy',
@@ -14,8 +17,10 @@ export default function PrivacyPolicy() {
     <main className="min-h-screen py-32 px-8 bg-surface text-on-surface">
       <div className="max-w-3xl mx-auto">
         <div className="mb-12">
-          <Link href="/" className="text-primary hover:underline font-bold mb-8 inline-block">
-            &larr; Back to Home
+          <Link
+            href="/"
+            className="flex items-center gap-2 text-primary hover:underline font-bold mb-8 inline-block">
+            <FontAwesomeIcon icon={faArrowLeft} /> <span>Back to Home</span>
           </Link>
           <h1 className="text-4xl md:text-6xl font-headline font-black text-on-surface mb-4">
             Privacy Policy.
