@@ -13,7 +13,7 @@ export default function Identity() {
           viewport={{ once: true }}
           className="md:col-span-8">
           <h2 className="text-4xl md:text-6xl font-headline font-black text-on-surface mb-8 leading-tight">
-            Unapologetic Digital <br />
+            Unfiltered Digital <br />
             <span className="text-primary">Experiences.</span>
           </h2>
           <div className="space-y-6 text-xl md:text-2xl text-on-surface-variant font-medium leading-relaxed">

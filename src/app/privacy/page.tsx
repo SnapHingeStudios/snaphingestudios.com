@@ -34,10 +34,10 @@ export default function PrivacyPolicy() {
               1. The Short Version
             </h2>
             <p>
-              At Snap Hinge Studios, we want to build unapologetic digital experiences, not harvest
-              your data. We only collect what we absolutely need to keep you updated (like your
-              email) and to understand how people use our website (basic analytics). We do not sell
-              your personal information.
+              At Snap Hinge Studios, we&apos;re here to build games and apps with real edge, not
+              collect your data. We only gather what we absolutely need to keep you in the loop
+              (like your email) and to see how our website is doing. We do not sell your personal
+              information.
             </p>
           </section>
 

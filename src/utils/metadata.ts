@@ -17,7 +17,7 @@ const SITE_NAME = 'Snap Hinge Studios';
 const TWITTER_CREATOR = '@SnapHingeStudio';
 const GOOGLE_ADSENSE_ACCOUNT = '';
 const DEFAULT_TITLE = 'Snap Hinge Studios';
-const DEFAULT_DESCRIPTION = "We're an independent app and game studio proud to call Buffalo, NY home. We build unapologetic digital experiences fueled by blue-collar grit and classic arcade energy. Welcome to the Herd.";
+const DEFAULT_DESCRIPTION = "We're an independent app and game studio proud to call Buffalo, NY home. We build games and apps fueled by blue-collar grit and classic arcade energy. Welcome to the Herd.";
 const DEFAULT_OG_IMAGE = '/mascot/mascot-player-one.webp';
 const DEFAULT_KEYWORDS = [
   'Snap Hinge Studios',

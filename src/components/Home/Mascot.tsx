@@ -44,9 +44,9 @@ export default function Mascot() {
               The Spirit of the <span className="italic">Herd.</span>
             </h2>
             <p className="text-xl text-on-surface-variant font-medium leading-relaxed mb-12">
-              Meet Mac. He&apos;s more than just a logo to us—he&apos;s the heavy-hitting heart of
-              the studio. Tough, resilient, and always ready to put the work in, Mac represents the
-              blue-collar grit and unapologetic creativity we pour into every game and app we build.
+              Meet Mac. He&apos;s more than just a logo—he&apos;s the heart of this studio. Tough
+              and always ready to work, Mac represents the blue-collar mentality and real edge we
+              bring to every game and app we build.
             </p>
 
             <div className="flex flex-wrap gap-4">
