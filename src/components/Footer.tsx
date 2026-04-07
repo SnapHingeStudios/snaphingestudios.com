@@ -52,6 +52,11 @@ export default function Footer() {
 
         <div className="flex gap-8">
           <Link
+            href="/about"
+            className="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors">
+            About Us
+          </Link>
+          <Link
             href="/privacy"
             className="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors">
             Privacy Policy
