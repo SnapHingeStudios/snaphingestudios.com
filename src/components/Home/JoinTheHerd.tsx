@@ -43,6 +43,7 @@ export default function JoinTheHerd() {
         setStatus('success');
       }
     } catch (error) {
+      console.error('Subscription error:', error);
       setStatus('error');
       setErrorMessage('Network error. Please try again.');
     }

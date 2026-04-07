@@ -40,6 +40,7 @@ export async function onRequestPost(context: { request: Request; env: Env }) {
     return new Response(JSON.stringify({ success: true }), { status: 200 });
 
   } catch (err) {
+    console.error('Subscription error:', err);
     return new Response(JSON.stringify({ error: 'Server error. Try again.' }), { status: 500 });
   }
 }
